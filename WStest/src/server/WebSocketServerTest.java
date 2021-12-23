@@ -21,6 +21,7 @@ public class WebSocketServerTest{
         } finally {
             server.stop();
             System.out.println("---queue resurt---");
+		//キューの中身を正常に取り出せるかのチェック
             for(Message m:EndpointTest.queue) {
             	System.out.println(m);
             }
