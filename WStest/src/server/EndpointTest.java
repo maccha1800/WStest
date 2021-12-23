@@ -41,6 +41,7 @@ public class EndpointTest {
         
         //Messageインスタンスを作成
         Message receivedMessage = new Message(message,session);
+	    //Messageインスタンスをキューに保存
         queue.add(receivedMessage);
 
         // 特定のグループに対しての送信（この列だと全体)
